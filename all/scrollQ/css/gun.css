@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul.content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul.content li {
+  height: 100vh;
+  position: relative;
+}
+
+ul.content li:nth-child(1) {
+  background-image: url("../images/CS.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -170px;
+}
+
+ul.content li:nth-child(2) {
+  background-image: url("../images/CZ.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -170px;
+}
+
+ul.content li:nth-child(3) {
+  background-image: url("../images/LS.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -70px;
+}
+
+ul.content li:nth-child(4) {
+  background-image: url("../images/MD.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+}
+
+ul.content li:nth-child(5) {
+  background-image: url("../images/NN.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -80px;
+}
+
+ul.content li .box1 {
+  width: 150px;
+  height: 150px;
+  background: lightcoral;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  transition: all 2s;
+  border-radius: 30px;
+  border: dashed 2px lightgoldenrodyellow;
+  left: -150px;
+  opacity: 0.2;
+}
+
+ul.content li .box2 {
+  width: 150px;
+  height: 150px;
+  background: lightcoral;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  transition: all 2s;
+  border-radius: 30px;
+  border: dashed 2px lightgoldenrodyellow;
+  right: -150px;
+  opacity: 0.2;
+}
+
+ul.content li.active .box1 {
+  left: 250px;
+  opacity: 1;
+}
+
+ul.content li.active .box2 {
+  right: 250px;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=./gun.css.map */

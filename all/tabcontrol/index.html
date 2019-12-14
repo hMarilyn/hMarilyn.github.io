@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<!-- <link rel="stylesheet" href="./css/ka.css"> -->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+				background-image: url("./images/long.png");
+			}
+			ul,
+			p {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.stage {
+				width: 530px;
+				margin: 90px 80px;
+				position: relative;
+			}
+			.stage ul.table {
+				width: 100%;
+				text-align: center;
+				overflow: hidden;
+			}
+			.stage ul.table li {
+				border-right: 1px solid black;
+				line-height: 40px;
+				background: rgba(173, 240, 240, 0.6);
+				float: left;
+				width: 110px;
+				cursor: pointer;
+				border-radius: 10px;
+			}
+			.stage ul.table .stay {
+				background: pink;
+				transition: all 2s;
+			}
+			.center p {
+				width: 100%;
+				height: 200px;
+				line-height: 30px;
+				text-indent: 2em;
+				color: white;
+				padding-top: 15px;
+				opacity: 0;
+				position: absolute;
+				top: 40px;
+				left: 0;
+				border-radius: 10px;
+			}
+			.center .stay {
+				opacity: 1;
+				transition: all 2s;
+			}
+			.box li {
+				width: 220px;
+				height: 200px;
+				border-radius: 10%;
+				position: absolute;
+				bottom: 35px;
+				left: 60px;
+				opacity: 0;
+			}
+			.box li:nth-child(1) {
+				background-image: url("./images/f6.jpg");
+				background-position: -80px -5px;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.box li:nth-child(2) {
+				background-image: url("./images/d2.jpg");
+				background-position: -80px -5px;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.box li:nth-child(3) {
+				background-image: url("./images/ai8.jpg");
+				background-position: -80px -5px;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.box li:nth-child(4) {
+				background-image: url("./images/huang1.jpg");
+				background-position: -80px -5px;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.box .stay {
+				opacity: 1;
+				transition: all 4.5s;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="stage">
+			<ul class="table">
+				<li class="stay">皮卡丘</li>
+				<li>哆啦A梦</li>
+				<li>爱宠大机密</li>
+				<li>小黄人</li>
+			</ul>
+			<div class="center">
+				<p class="stay">
+					《大侦探皮卡丘》是由传奇影业、华纳兄弟影片公司联合出品的电影，由罗伯·莱特曼
+					执导，瑞安·雷诺兹配音出演，贾斯提斯·史密斯、凯瑟琳·纽顿、苏琪·沃特豪斯、渡
+					边谦、克里斯·吉尔、瑞塔·奥拉等出演。该片于2019年5月3日在日本上映，并于2019
+					年5月10日北美、中国内地同步上映。改编自任天堂3DS同名游戏，讲述了大侦探皮卡丘
+					和蒂姆在莱姆市相遇，为了揭开蒂姆之父离奇失踪隐情，携手探案、追击真相的故事...
+				</p>
+				<p>
+					《哆啦A梦：伴我同行》是一部纪念《哆啦A梦》之父藤子·F·不二雄诞辰80周年的3D动画
+					电影，由八木龙一、山崎贵导演执导，由东宝株式会社出品。该片讲述了哆啦A梦圆满完
+					成了他的使命，启程返回22世纪，大雄该如何以一己之力实现他那来之不易的幸福未来。
+					该片于2014年8月8日在日本上映，2015年5月28日在中国内地上映。
+				</p>
+				<p>
+					《爱宠大机密》是由照明娱乐与环球影业联合出品的动画片，由亚罗·切尼、克里斯·雷纳
+					德联合执导，艾丽·坎伯尔，凯文·哈特、蕾克·贝尔、艾伯特·布鲁克斯、鲍比·莫伊尼汉
+					等参与配音。该片讲述了主人不在家时，各类宠物们形形色色的生活状态的故事。该片于
+					2016年7月8日在美国上映，同年8月2日在中国上映。
+				</p>
+				<p>
+					《小黄人大眼萌》是一部2015年的美国喜剧动画电影，该影片由凯尔·巴尔达、皮艾尔·柯
+					芬执导，桑德拉·布洛克、皮艾尔·柯芬、史蒂夫·卡瑞尔配音，由照明娱乐公司和环球影业
+					联合出品。该影片讲述了小黄人的历史以及他们要找到强大的新主人，并辅佐他完成作恶事
+					业的故事，背景涉及到伦敦、纽约等几个大城市，该片于2015年9月13日以3D及IMAX
+					3D格 式在中国上映。
+				</p>
+			</div>
+		</div>
+		<ul class="box">
+			<li class="stay"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script>
+			$(".table li").click(function() {
+				console.log($(this));
+				$(".table li").removeClass("stay");
+				$(this).addClass("stay");
+
+				$(".center p").removeClass("stay");
+				$(".center p")
+					.eq($(this).index())
+					.addClass("stay");
+
+				$(".box li").removeClass("stay");
+				$(".box li")
+					.eq($(this).index())
+					.addClass("stay");
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.box(){
+    width: 150px;
+    height: 150px;
+    background: lightcoral;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    transition: all 2s;
+    border-radius: 30px;
+    border: dashed 2px lightgoldenrodyellow;
+}
+ul.content {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    height: 100vh;
+    overflow: hidden;
+	li {
+        height: 100vh;
+        position: relative;
+		&:nth-child(1){
+            background-image: url("../images/CS.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -170px;
+        }
+        &:nth-child(2){
+            background-image: url("../images/CZ.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -170px;
+        }
+        &:nth-child(3){
+            background-image: url("../images/LS.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -70px;
+        }
+        &:nth-child(4){
+            background-image: url("../images/MD.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -100px;
+        }
+        &:nth-child(5){
+            background-image: url("../images/NN.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -80px;
+        }
+        .box1{
+            .box;
+            left: -150px;
+            opacity: 0.2;
+        }
+        .box2{
+            .box;
+            right: -150px;
+            opacity: 0.2;
+        }
+        &.active .box1{
+            left: 250px;
+            opacity: 1;
+        }
+        &.active .box2{
+            right: 250px;
+            opacity: 1;
+        }
+	}
+}

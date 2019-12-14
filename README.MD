@@ -9,11 +9,13 @@
 >   + [名创优品](https://hMarilyn.github.io/all/mingc/index.html)
 ---
 #### jQuery
-- 选项卡
-- 横向轮播图
-- 全屏滚动
-- 对比
-- 四小块图
+>- 选项卡
+>   + [选项卡](https://hMarilyn.github.io/all/tabcontrol/index.html)
+>- 横向轮播图
+>- 全屏滚动
+>   + [全屏滚动](https://hMarilyn.github.io/all/scrollQ/index.html)
+>- 对比
+>- 四小块图
 ---
 #### JavaScript
 - 放大镜
@@ -25,12 +27,16 @@
 - 表单验证
 - 倒计时
 ---
-#### bootstrap
-- 美女模特
-- 游戏页面
+>#### bootstrap
+>- 美女模特
+>   + [模特](https://hMarilyn.github.io/all/model/index.html)
+>- 游戏页面
+>   + [游戏](https://hMarilyn.github.io/all/game/index.html)
+>- 风景页面
+>   + [风景](https://hMarilyn.github.io/all/landscape/index.html)
 ---
 #### css3
-- 圆圈
+- haver + css3
 - 十字3D
 - Loading
 - 3D盒子 + 视差 + 3D卡片

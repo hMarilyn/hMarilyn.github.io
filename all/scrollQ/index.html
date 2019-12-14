@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/minireset.css/0.0.2/minireset.css" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/gun.css" />
+</head>
+
+<body>
+	<ul class="content">
+		<li>
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</li>
+		<li>
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</li>
+		<li>
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</li>
+		<li>
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</li>
+		<li>
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</li>
+	</ul>
+
+	<script>
+		var y = 0;
+		var canClick = true;
+		$("body").on("wheel", function (element) {
+			y += element.originalEvent.deltaY;
+			// console.log(y);
+			setTimeout(function () {
+				if (canClick) {
+					canClick = false;
+					if (y > 0) {
+						nextPi();
+					} else if (y < 0) {
+						prevPi();
+					}
+					setTimeout(function () {
+						canClick = true;
+					}, 500);
+				}
+				y = 0;
+			}, 300);
+		});
+
+		var current = 0;
+
+		function showPi() {
+			$(".content")
+				.children("li")
+				.removeClass("active")
+				.eq(0)
+				.animate({
+					"margin-top": -100 * current + "vh"
+				})
+				.end()
+				.eq(current)
+				.addClass("active");
+		}
+
+		function nextPi() {
+			current =
+				current >= $(".content li").length - 1 ?
+				current :
+				++current;
+			showPi();
+		}
+
+		function prevPi() {
+			current = current <= 0 ? 0 : --current;
+			showPi();
+		}
+	</script>
+</body>
+
+</html>

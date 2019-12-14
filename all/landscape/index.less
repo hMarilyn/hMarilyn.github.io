@@ -1,0 +1,497 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.navbar-default {
+	padding: 15px 0;
+	background: rgba(63, 62, 62, 0.75);
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 8px;
+		margin-right: 15px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid #ccc;
+	}
+	a.navbar-brand {
+		font-size: 26px;
+		font-weight: 600;
+		color: #eee;
+		padding: 15px;
+		transition: all 0.3s;
+		&:hover {
+			color: #6aaf08;
+		}
+	}
+	ul.navbar-nav {
+		text-align: center;
+		li {
+			a {
+				color: #ddd;
+				font-size: 15px;
+				font-weight: 400;
+				letter-spacing: 1px;
+				padding: 8px 2px;
+				border-radius: 0;
+				margin: 9px 10px 0;
+				transition: all 0.3s;
+				&:hover {
+					color: #6aaf08;
+				}
+			}
+		}
+	}
+}
+section.head {
+	background-image: url(./image/intro-bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+	.article {
+		width: 450px;
+		height: 220px;
+		margin: 300px auto 140px;
+		h1 {
+			color: white;
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			margin-bottom: 10px;
+		}
+		p {
+			color: white;
+			font-size: 16px;
+			line-height: 28px;
+			margin: 20px 0 40px;
+			font-weight: 700;
+		}
+		a {
+			color: #fff;
+			background-color: #6aaf08;
+			padding: 14px 20px;
+			letter-spacing: 1px;
+			font-size: 12px;
+			font-weight: bold;
+			border-radius: 7px;
+			margin-top: 20px;
+			transition: all 0.3s;
+			box-shadow: 5px 8px 10px #050505b4;
+			border: rgba(255, 255, 255, 0.575) 2px solid;
+			&:hover {
+				background: rgba(3, 150, 3);
+			}
+		}
+	}
+}
+section#about {
+	padding: 120px 0 80px;
+	p {
+		font-size: 15px;
+		margin: 20px 0 10px;
+		line-height: 24px;
+		color: #666;
+	}
+	.welcome {
+		h2 {
+			font-size: 36px;
+			color: #333;
+			margin-bottom: 20px;
+			font-weight: 600;
+			span {
+				color: #70ad47;
+				font-weight: 700;
+			}
+		}
+		hr {
+			height: 3px;
+			width: 70px;
+			background: #6aaf08;
+			margin-bottom: 40px;
+		}
+		.btn {
+			margin: 40px 0;
+			a {
+				text-transform: uppercase;
+				color: #fff;
+				background-color: #6aaf08;
+				padding: 14px 20px;
+				letter-spacing: 1px;
+				font-size: 17px;
+				font-weight: 400;
+				border-radius: 6px;
+				transition: all 0.3s;
+			}
+		}
+	}
+	.garden {
+		img {
+			width: 720px;
+		}
+		h3 {
+			margin-top: 20px;
+			font-size: 22px;
+			color: #333;
+			font-weight: 600;
+		}
+	}
+}
+section#services {
+	padding: 120px 0;
+	background: #6aaf08;
+	color: white;
+	text-align: center;
+	h2 {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	hr {
+		width: 70px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		border-top: 3px solid rgba(238, 238, 238, 0.6);
+	}
+	p {
+		margin-bottom: 80px;
+		font-size: 18px;
+		color: rgba(255, 255, 255, 0.9);
+	}
+	ul.row {
+		li {
+			img {
+				width: 225px;
+				height: 225px;
+				border-radius: 50%;
+				border: 10px solid rgba(255, 255, 255, 0.1);
+			}
+			h3 {
+				font-size: 24px;
+				padding: 5px 0;
+				margin: 20px 0 10px;
+			}
+			p {
+				font-size: 15px;
+				color: rgba(255, 255, 255, 0.9);
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+section#gallery {
+	padding: 100px 0;
+	color: #333;
+	h2 {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	hr {
+		width: 70px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		border-top: 3px solid #6aaf08;
+	}
+	p {
+		margin-bottom: 80px;
+		font-size: 18px;
+		color: #666;
+	}
+	ul.row {
+		li {
+			margin: 15px 0;
+			.hover_bg {
+				position: relative;
+				overflow: hidden;
+				.hover_text {
+					position: absolute;
+					text-align: center;
+					margin: 0 auto;
+					background: rgba(0, 0, 0, 0.6);
+					padding: 30% 0 0 0;
+					height: 100%;
+					width: 100%;
+					opacity: 0;
+					transition: all 0.5s;
+					h4 {
+						opacity: 0;
+						color: #fff;
+						transform: translateY(90px);
+						transition: all 0.3s;
+						font-size: 18px;
+						letter-spacing: 1px;
+						font-weight: 300;
+						text-transform: uppercase;
+					}
+					&:hover {
+						opacity: 1;
+						h4 {
+							opacity: 1;
+							transform: translateY(100%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+section#testimonials {
+	background-image: url(./image/testimonials-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	.overlay {
+		padding: 120px 0;
+		background: rgba(106, 175, 8, 0.75);
+		text-align: center;
+		h2 {
+			color: white;
+			font-size: 36px;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		hr {
+			width: 70px;
+			margin: 0 auto;
+			margin-bottom: 70px;
+			border-top: 3px solid rgba(238, 238, 238, 0.6);
+		}
+		.row {
+			.vivi {
+				margin-left: 100px;
+				p{
+					color: white;
+					font-size: 16px;
+					font-weight: 600;
+					margin-bottom: 10px;
+					line-height: 35px;
+					padding: 0 15px;
+				}
+				.carousel-indicators{
+					position: relative;
+					top: 50px;
+					left: 50%;
+				}
+			}
+		}
+	}
+}
+section#contact {
+	padding: 100px 0;
+	text-align: center;
+	h2 {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	hr {
+		width: 70px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		border-top: 3px solid #6aaf08;
+	}
+	p {
+		margin-bottom: 50px;
+		font-size: 18px;
+		color: #777;
+	}
+	ul {
+		li {
+			margin-bottom: 40px;
+			h3 {
+				font-size: 17px;
+				color: #333;
+				margin: 20px 0 10px;
+				font-weight: 600;
+			}
+			hr {
+				width: 70px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+				border-top: 3px solid #ddd;
+			}
+			p {
+				font-size: 15px;
+				margin-bottom: 10px;
+				color: #666;
+			}
+		}
+	}
+	h3 {
+		font-size: 17px;
+		color: #333;
+		margin: 20px 0 40px;
+		font-weight: 600;
+	}
+	form {
+		input.form-control {
+			height: 45px;
+			padding: 5px 15px;
+			font-size: 18px;
+		}
+		textarea.form-control {
+			padding: 20px;
+			font-size: 18px;
+		}
+		button.btn {
+			text-transform: uppercase;
+			color: #fff;
+			background-color: #6aaf08;
+			padding: 14px 20px;
+			letter-spacing: 1px;
+			font-size: 17px;
+			font-weight: 400;
+			border-radius: 6px;
+			margin-top: 20px;
+			transition: all 0.3s;
+			&:hover {
+				background: #80d30c;
+				border: 1px solid white;
+			}
+		}
+	}
+}
+footer {
+	padding: 30px 0 20px;
+	background: #333;
+	color: #666;
+	text-align: center;
+	ul {
+		font-size: 14px;
+		margin: 10px 0 60px;
+		li {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin: 0 20px;
+			.fa {
+				font-size: 22px;
+				width: 40px;
+				height: 40px;
+				padding: 10px;
+				background: #444;
+				color: #6aaf08;
+				border-radius: 50%;
+				transition: all 0.3s;
+			}
+			&:hover {
+				.fa {
+					color: white;
+					background: #6aaf08;
+				}
+			}
+		}
+	}
+	p {
+		font-size: 15px;
+		margin-bottom: 10px;
+		a {
+			color: #888;
+			&:hover {
+				color: rgb(214, 213, 213);
+			}
+		}
+	}
+}
+.btnn {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	background: #69af08d3;
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.623);
+	.fa {
+		color: white;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 55px;
+	}
+	&:hover{
+		background: #ccc;
+		.fa{
+			color: #6aaf08;
+		}
+	}
+}
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+	section.head {
+		.article {
+			width: 550px;
+			height: 225px;
+			margin: 300px auto 160px;
+			h1 {
+				font-size: 40px;
+			}
+			p {
+				font-size: 18px;
+			}
+			a {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+	section.head {
+		.article {
+			width: 650px;
+			height: 240px;
+			margin: 300px auto 180px;
+			h1 {
+				font-size: 50px;
+			}
+			p {
+				font-size: 18px;
+			}
+			a {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+	section.head {
+		.article {
+			width: 750px;
+			height: 258px;
+			margin: 320px auto 200px;
+			h1 {
+				font-size: 60px;
+			}
+			p {
+				font-size: 20px;
+			}
+			a {
+				font-size: 17px;
+			}
+		}
+	}
+}

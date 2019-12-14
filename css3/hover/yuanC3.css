@@ -1,0 +1,805 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+section.first {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.first .spinner {
+  width: 230px;
+  height: 230px;
+  border: 10px solid #ecab18;
+  border-right-color: #1ad280;
+  border-bottom-color: #1ad280;
+  border-radius: 50%;
+  transition: all 1s cubic-bezier(0.42, 0, 0.68, 1.24);
+}
+section.first .img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  height: auto;
+}
+section.first .img img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+section.first .info {
+  background: rgba(66, 66, 66, 0.6);
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 1s;
+}
+section.first .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 100px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.first .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.first:hover .spinner {
+  transform: rotate(180deg);
+}
+section.first:hover .info {
+  opacity: 1;
+}
+section.secend {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.secend img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.secend .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.secend .img {
+  overflow: hidden;
+}
+section.secend .img img {
+  transition: all 0.5s;
+}
+section.secend .info {
+  background: rgba(66, 66, 66, 0.6);
+  top: 0px;
+  left: 400px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.5s;
+  padding: 35px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.secend .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.secend .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.secend:hover img {
+  transform: rotate(90deg);
+}
+section.secend:hover .info {
+  left: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+section.thire {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.thire img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.thire .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.thire .img {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+  left: 0;
+}
+section.thire .info {
+  background: #4b8040;
+  top: 0px;
+  left: 400px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.5s;
+  padding: 35px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.thire .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.thire .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.thire:hover .img {
+  transform: scale(0.5);
+  left: -90px;
+}
+section.thire:hover .info {
+  left: 50px;
+  opacity: 1;
+  visibility: visible;
+}
+section.four {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.four img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.four .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.four .img {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+  top: 0;
+}
+section.four .info {
+  background: #ff9999;
+  top: 400px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.5s;
+  padding: 35px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.four .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.four .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.four:hover .img {
+  top: -400px;
+  opacity: 0;
+}
+section.four:hover .info {
+  top: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+section.fire {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.fire img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.fire .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.fire .img {
+  overflow: hidden;
+}
+section.fire .info {
+  background: rgba(38, 39, 39, 0.582);
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  transition: all 1s;
+  padding: 35px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.fire .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.fire .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.fire:hover .info {
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+section.fire:hover .info h3 {
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+section.fire:hover .info p {
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+section.six {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.six img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.six .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.six .img {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+section.six .info {
+  background: #48696d;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.5s;
+  padding: 35px;
+  opacity: 0;
+  transform: scale(0.4);
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.six .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.six .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.six:hover .img {
+  transform-origin: center center;
+  transform: translatex(150px) rotate(140deg);
+  opacity: 0;
+}
+section.six:hover .info {
+  opacity: 1;
+  transform: scale(1);
+}
+section.seven {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.seven img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.seven .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.seven .img {
+  overflow: hidden;
+  transition: all 0.7s;
+}
+section.seven .info {
+  background: #669933;
+  top: 0px;
+  left: -200px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.4s;
+  padding: 35px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.seven .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.seven .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.seven:hover .img {
+  opacity: 0;
+  transform: scale(0.2);
+}
+section.seven:hover .info {
+  opacity: 1;
+  left: 0;
+  visibility: visible;
+}
+section.eight {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.eight img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.eight .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.eight .img {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+section.eight .info {
+  background: #bb0a45;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.4s;
+  padding: 35px;
+  opacity: 0;
+  transform: scale(1.3);
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.eight .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.eight .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.eight:hover .img {
+  opacity: 0;
+  transform: scale(0.4);
+}
+section.eight:hover .info {
+  opacity: 1;
+  transform: scale(1);
+}
+section.night {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.night img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.night .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.night .img {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+section.night .info {
+  background: #669999;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.4s;
+  padding: 35px;
+  z-index: -1;
+  transform: scale(0.5);
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.night .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.night .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.night .info h3 {
+  font-size: 20px;
+  margin: 0 20px;
+  height: 60px;
+  padding: 75px 0 0 0;
+}
+section.night:hover .img {
+  transform: scale(0.43) translateY(-165px);
+}
+section.night:hover .info {
+  opacity: 1;
+  transform: scale(1);
+}
+section.ten {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.ten img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.ten .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.ten .img {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+section.ten .info {
+  background: #669999;
+  top: 0px;
+  left: 300px;
+  width: 180px;
+  height: 180px;
+  transition: all 0.8s;
+  padding: 35px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.ten .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.ten .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.ten:hover .img {
+  transform: translate(300px) rotate(190deg);
+  opacity: 0;
+}
+section.ten:hover .info {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(360deg);
+  left: 0;
+}
+section.eleven {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.eleven img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.eleven .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.eleven::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #272726;
+  display: block;
+  z-index: 6;
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  margin-top: -5px;
+}
+section.eleven .img {
+  overflow: hidden;
+  transition: all 0.5s;
+  transform-origin: 95% 50%;
+}
+section.eleven .info {
+  background: #5a4166;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  padding: 35px;
+  z-index: -1;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.eleven .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.eleven .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.eleven:hover .img {
+  transform: rotate(-120deg);
+}
+section.twelve {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 40px;
+  float: left;
+}
+section.twelve img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section.twelve .spinner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 210px;
+  width: 210px;
+  border: 20px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+section.twelve .img {
+  overflow: hidden;
+  transition: all 0.5s;
+  transform-origin: top;
+}
+section.twelve .info {
+  background: #8dad50be;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  padding: 35px;
+  z-index: -1;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+}
+section.twelve .info h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 80px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+section.twelve .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+section.twelve:hover .img {
+  transform: rotateX(180deg);
+}
+/*# sourceMappingURL=./yuanC3.css.map */

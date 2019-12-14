@@ -1,0 +1,73 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #a8f8f8;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.carousel {
+  width: 533px;
+  margin: 0 auto;
+  position: relative;
+}
+.carousel .picture li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.carousel .picture li img {
+  vertical-align: middle;
+  width: 100%;
+}
+.carousel .picture li:first-child {
+  position: relative;
+  opacity: 1;
+}
+.carousel .button li {
+  position: absolute;
+  top: 50%;
+  float: left;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.carousel .button li img {
+  width: 100%;
+}
+.carousel .button li:first-child {
+  left: 0;
+}
+.carousel .button li:last-child {
+  right: 0;
+}
+.carousel .button::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.carousel .dot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.carousel .dot span {
+  width: 13px;
+  height: 13px;
+  background: #5787e0;
+  display: inline-block;
+  margin: 6px;
+  border-radius: 6px;
+  opacity: 0.2;
+  cursor: pointer;
+}
+.carousel .dot .active {
+  background: #f16f9a;
+}
+/*# sourceMappingURL=./lun.css.map */

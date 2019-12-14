@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+			.con .picture {
+				float: left;
+				width: 400px;
+				height: 440px;
+				background: #f09eec;
+				position: relative;
+			}
+
+			.con .picture img {
+				width: 100%;
+				vertical-align: middle;
+			}
+
+			.con .picture .box {
+				width: 200px;
+				height: 220px;
+				background: rgba(0, 0, 0, 0.3);
+				position: absolute;
+				top: 0;
+				left: 0;
+				pointer-events: none;
+			}
+
+			.con .big {
+				float: left;
+				width: 400px;
+				height: 440px;
+				background: url(./images/duye.jpg) no-repeat;
+				background-position: 200% auto;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="con">
+			<div class="picture">
+				<img src="./images/duye.jpg" />
+				<div class="box"></div>
+			</div>
+			<div class="big"></div>
+		</div>
+
+		<script>
+			var pic = document.querySelector(".picture");
+			var box = document.querySelector(".box");
+			var big = document.querySelector(".big");
+
+			pic.onmousemove = function(e) {
+				console.log(e.offsetX, e.offsetY);
+				var x = e.offsetX - 100;
+				var y = e.offsetY - 110;
+				// 限制在框内移动
+				x = x < 0 ? 0 : x;
+				x = x > 200 ? 200 : x;
+				y = y < 0 ? 0 : y;
+				y = y > 220 ? 220 : y;
+
+				box.style.left = x + "px";
+				box.style.top = y + "px";
+
+				big.style.backgroundPositionY = y * -2 + "px";
+				big.style.backgroundPositionX = x * -2 + "px";
+			};
+		</script>
+	</body>
+</html>

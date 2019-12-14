@@ -1,0 +1,200 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(lightpink, rgb(145, 241, 201));
+    // background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@keyframes myrotle {
+    from {
+        transform: rotateY(0deg) rotateX(40deg);
+    }
+
+    to {
+        transform: rotateY(360deg) rotateX(40deg);
+    }
+}
+
+.bigbox {
+    height: 600px;
+    width: 600px;
+    // background:limegreen;
+    margin: 100px auto 0;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 500px;
+
+    .noall {
+        width: 300px;
+        height: 300px;
+        // background: rgba(87, 60, 60, 0.9);
+        margin: 0px auto;
+        transform-style: preserve-3d;
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        // transform: rotateY(-55deg) rotateX(-15deg);
+        // transform: rotateX(30deg);
+        animation: myrotle 8s linear 0s infinite;
+
+        .noll {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &.noll-top {
+                // background: rgba(52, 108, 134, 0.3);
+                background-image: url(./image/box7.jpg);
+                background-size: cover;
+                background-position: -100px 0;
+                transform: rotateX(270deg) translateZ(-150px);
+                transition: all 0.5s;
+            }
+
+            &.noll-bottom {
+                // background: rgba(67, 169, 238, 0.3);
+                background-image: url(./image/box8.jpg);
+                background-size: cover;
+                background-position: -200px 0;
+                transform: rotateX(270deg) translateZ(150px);
+                transition: all 0.5s;
+            }
+
+            &.noll-left {
+                // background: rgba(224, 236, 53, 0.3);
+                background-image: url(./image/box9.jpg);
+                background-size: cover;
+                background-position: -80px 0;
+                transform: rotateY(-90deg) translateZ(150px);
+                transition: all 0.5s;
+            }
+
+            &.noll-right {
+                // background: rgba(163, 66, 202, 0.3);
+                background-image: url(./image/box10.jpg);
+                background-size: cover;
+                background-position: -50px 0;
+                transform: rotateY(90deg) translateZ(150px);
+                transition: all 0.5s;
+            }
+
+            &.noll-front {
+                // background: rgba(206, 75, 119, 0.3);
+                background-image: url(./image/box11.jpg);
+                background-size: cover;
+                background-position: -100px 0;
+                transform: translateZ(150px);
+                transition: all 0.5s;
+            }
+
+            &.noll-back {
+                // background: rgba(61, 78, 233, 0.3);
+                background-image: url(./image/box12.jpg);
+                background-size: cover;
+                background-position: -100px 0;
+                transform: rotateY(180deg) translateZ(150px);
+                transition: all 0.5s;
+            }
+        }
+        &:hover {
+            .noll-top{
+                opacity: 0.7;
+                transform: rotateX(270deg) translateZ(-250px);
+            }
+            .noll-bottom{
+                opacity: 0.7;
+                transform: rotateX(270deg) translateZ(250px);
+            }
+            .noll-left{
+                opacity: 0.7;
+                transform: rotateY(-90deg) translateZ(250px);
+            }
+            .noll-right{
+                opacity: 0.7;
+                transform: rotateY(90deg) translateZ(250px);
+            }
+            .noll-front{
+                opacity: 0.7;
+                transform: translateZ(250px);
+            }
+            .noll-back{
+                opacity: 0.7;
+                transform: rotateY(180deg) translateZ(250px);
+            }
+        }
+    }
+
+    .cube {
+        width: 200px;
+        height: 200px;
+        // background: rgba(75, 74, 74, 0.9);
+        margin: 0px auto;
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        // transform: rotateY(-45deg) rotateX(-15deg);
+        // transform: rotateX(30deg);
+        animation: myrotle 8s linear 0s infinite;
+
+        .side {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &.side-top {
+                // background: rgba(109, 199, 241, 0.3);
+                background-image: url(./image/box1.jpg);
+                background-size: cover;
+                background-position: center;
+                transform: rotateX(270deg) translateZ(-100px);
+            }
+
+            &.side-bottom {
+                // background: rgba(135, 247, 135, 0.3);
+                background-image: url(./image/box2.jpg);
+                background-size: cover;
+                background-position: 0px center;
+                transform: rotateX(270deg) translateZ(100px);
+            }
+
+            &.side-left {
+                // background: rgba(248, 100, 223, 0.3);
+                background-image: url(./image/box3.jpg);
+                background-size: cover;
+                background-position: center;
+                transform: rotateY(-90deg) translateZ(100px);
+            }
+
+            &.side-right {
+                // background: rgba(238, 193, 126, 0.3);
+                background-image: url(./image/box4.jpg);
+                background-size: cover;
+                background-position: center;
+                transform: rotateY(90deg) translateZ(100px);
+            }
+
+            &.side-front {
+                // background: rgba(76, 60, 133, 0.3);
+                background-image: url(./image/box5.jpg);
+                background-size: cover;
+                background-position: center;
+                transform: translateZ(100px);
+            }
+
+            &.side-back {
+                // background: rgba(151, 75, 31, 0.3);
+                background-image: url(./image/box6.jpg);
+                background-size: cover;
+                background-position: -30px center;
+                transform: rotateY(180deg) translateZ(100px);
+            }
+        }
+    }
+
+}

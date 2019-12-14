@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./css/lun.css">
+</head>
+<body>
+    <div class="carousel">
+        <ul class="picture">
+            <li><img src="./images/d1.jpg" alt=""></li>
+            <li><img src="./images/d2.jpg" alt=""></li>
+            <li><img src="./images/d3.jpg" alt=""></li>
+            <li><img src="./images/d4.jpg" alt=""></li>
+            <li><img src="./images/d5.jpg" alt=""></li>
+            <li><img src="./images/d6.jpg" alt=""></li>
+            <li><img src="./images/d7.jpg" alt=""></li>
+            <li><img src="./images/d8.jpg" alt=""></li>
+        </ul>
+        <ul class="button">
+            <li><img src="./images/left.png" alt=""></li>
+            <li><img src="./images/right.png" alt=""></li>
+        </ul>
+        <div class="dot"></div>
+    </div>
+
+    <script>
+        var lis = document.querySelectorAll(".picture > li");
+        var ago = document.querySelector(".button li:first-child");
+        var next = document.querySelector(".button li:last-child");
+        var current = 0;
+        var dot = document.querySelector(".dot");
+
+        lis.forEach(function (ele,index) {
+            var nono = document.createElement("span");
+            if (index == 0) {
+                nono.className = "active";
+            }
+            dot.appendChild(nono);
+            nono.title = index ;
+        })
+
+        var dots = document.querySelectorAll(".dot span");
+        function setDot(index) {
+            dots.forEach(function (element,ind) {
+                element.className = "";
+            })
+            dots[index].className = "active";
+        }
+        function setPic(index) {
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].style.opacity =  "0"
+            }
+            lis[index].style.opacity =  "1"
+            setDot(index);
+        }
+
+        function cut(y) {
+            y = y > lis.length-1 ? 0 : y;
+            setPic(y);
+        }
+        next.onclick = function () {
+            current++;
+            // if (current > lis.length-1) {
+            //     current = 0;
+            // }
+            current = current > lis.length-1 ? 0 : current;
+            setPic(current);
+        }
+        ago.onclick = function () {
+            current--;
+            // if (current < 0) {
+            //     current = lis.length-1;
+            // }
+            current = current < 0 ? lis.length-1 : current;
+            setPic(current);
+        }
+        for (var i = 0; i < dots.length; i++) {
+            dots[i].onmouseover = function () {
+                setPic(this.title);
+                current = this.title;
+            };   
+        }
+        setInterval(function () {
+            current++;
+            if (current == lis.length) {
+                current = 0;
+            }     
+            cut(current);
+        },3000)
+    </script>
+</body>
+</html>

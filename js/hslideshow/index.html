@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>横向风琴</title>
+
+    <style>
+        body{
+            background: rgb(181, 224, 241);
+        }
+        .box{
+            margin: 0 auto;
+            width: 850px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img{
+            width: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            vertical-align: middle;
+            transition: all 1.2s;
+        }
+        .box img:first-child{
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/ai1.jpg" alt="">
+        <img src="./images/ai2.jpg" alt="">
+        <img src="./images/ai3.jpg" alt="">
+        <img src="./images/ai4.jpg" alt="">
+        <img src="./images/ai5.jpg" alt="">
+        <img src="./images/ai6.jpg" alt="">
+        <img src="./images/ai7.jpg" alt="">
+        <img src="./images/ai8.jpg" alt="">
+    </div>
+
+    <script>
+        var imgs = document.querySelectorAll('.box img');
+        var box = document.querySelector('.box');
+
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].style.left = (100 / imgs.length)*i + "%";
+            imgs[i].xxx = i;
+            imgs[i].onmouseover = function () {
+                console.log(this.xxx)
+                for (var j = 0; j < imgs.length; j++) {
+                    if (j <= this.xxx) {
+                        imgs[j].style.left =
+                         j * ((box.offsetWidth-imgs[0].offsetWidth) / (imgs.length-1)) + 'px';
+                    } else {
+                        imgs[j].style.left =
+                         (j - 1) * ((box.offsetWidth-imgs[0].offsetWidth) / (imgs.length-1)) 
+                         + imgs[0].offsetWidth + 'px';
+                    }
+                }
+            }
+            imgs[i].onmouseout = function () {
+                for (var i = 0; i < imgs.length; i++) {
+                    imgs[i].style.left = (100 / imgs.length)*i + "%";
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

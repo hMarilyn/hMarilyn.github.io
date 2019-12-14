@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.staticfile.org/minireset.css/0.0.2/minireset.min.css"
+		/>
+	</head>
+	<body>
+		<div class="stage">
+			<div class="mask">
+				<h3>STEPS</h3>
+				<p>THIS WEEK</p>
+				<div class="chart">
+					<span>
+						<i class="top">a</i>
+						<i class="left"></i>
+						<i class="front"></i>
+					</span>
+					<span>
+						<i class="top">b</i>
+						<i class="left"></i>
+						<i class="front"></i>
+					</span>
+					<span>
+						<i class="top">c</i>
+						<i class="left"></i>
+						<i class="front"></i>
+					</span>
+					<span>
+						<i class="top">d</i>
+						<i class="left"></i>
+						<i class="front"></i>
+					</span>
+					<span>
+						<i class="top">e</i>
+						<i class="left"></i>
+						<i class="front"></i>
+					</span>
+
+                </div>
+                <h3>93,000</h3>
+			</div>
+		</div>
+		<script>
+			var stage = document.querySelector(".stage");
+			// document.body.onmousemove= function (event) {
+			//     var x = event.clientX - stage.offsetLeft - stage.offsetWidth / 2;
+			//     var y = event.clientY - stage.offsetTop - stage.offsetHeight / 2;
+			//     stage.style.transform =  "rotateY(" + -x / 30 + "deg) rotateX(" + -y / 30 + "deg)";
+			// }
+			document.body.onclick = function() {
+				stage.classList.toggle("active");
+			};
+		</script>
+	</body>
+</html>

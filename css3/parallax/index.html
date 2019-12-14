@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+				background-image: linear-gradient(to bottom, #c6426e, #642b73);
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				perspective: 1500px;
+			}
+			.stage {
+				width: 600px;
+				margin: 50px auto;
+				padding: 30px 35px;
+				background: white;
+				border-radius: 20px;
+				box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+			}
+			.stage h3 {
+				margin: 16px auto 6px;
+				color: #eb285d;
+				letter-spacing: 1px;
+			}
+			.stage h1 {
+				margin: 28px auto;
+				font-size: 32px;
+				letter-spacing: 1px;
+				font-weight: 800;
+			}
+			.stage .items {
+				display: flex;
+                justify-content: space-around;
+                
+			}
+			.stage .items .card {
+				width: 160px;
+				height: 240px;
+				overflow: hidden;
+				border-radius: 20px;
+				background-image: url("./image/3dr_mono.png"),
+					url("./image/3dr_monobg.jpg");
+				background-repeat: no-repeat;
+				background-size: auto 200px, 200px;
+				background-position: 10px 60px, -10px -10px;
+                box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.44);
+                position: relative;
+                text-align: center;
+			}
+			.stage .items .card:nth-child(2) {
+				background-image: url("./image/3dr_chihiro.png"),
+					url("./image/3dr_spirited.jpg");
+				background-position: 30px 60px, -10px -10px;
+			}
+			.stage .items .card:nth-child(3) {
+				background-image: url("./image/3dr_howlcastle.png"),
+					url("./image/3dr_howlbg.jpg");
+            }
+            .stage .items .card p{
+                color: white;
+                position: absolute;
+                bottom: 5px;
+                left: 15px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="stage">
+			<h3>Movies</h3>
+			<h1>Popular</h1>
+			<div class="items">
+				<div class="card">
+					<p>Princess Mononoke</p>
+				</div>
+				<div class="card">
+					<p>Spirited Away</p>
+				</div>
+				<div class="card">
+					<p>Howl's Moving Castle</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			var stage = document.querySelector(".stage");
+			var cards = document.querySelectorAll(".items .card");
+			document.body.onmousemove = function(event) {
+				var x =
+					event.clientX - stage.offsetLeft - stage.offsetWidth / 2;
+				var y =
+					event.clientY - stage.offsetTop - stage.offsetHeight / 2;
+				stage.style.transform =
+					"rotateY(" + -x / 50 + "deg) rotateX(" + y / 50 + "deg)";
+
+				cards.forEach(function(card, index) {
+					card.style.backgroundPosition =
+						-x / 100 +
+						10 +
+						"px " +
+						(-y / 100 + 60) +
+						"px, " +
+						(x / 80 + -10) +
+						"px " +
+						(y / 80 + -10) +
+						"px";
+					if (index == 1) {
+						card.style.backgroundPosition =
+							-x / 100 +
+							30 +
+							"px " +
+							(-y / 100 + 60) +
+							"px, " +
+							(x / 80 + -10) +
+							"px " +
+							(y / 80 + -10) +
+							"px";
+					}
+				});
+			};
+		</script>
+	</body>
+</html>

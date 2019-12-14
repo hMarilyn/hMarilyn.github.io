@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>表单验证</title>
+    <link rel="stylesheet" href="./css/i7biao.css" />
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="">返回首页</a>
+            <a href="">已有账号？去登陆</a>
+        </header>
+        <div class="mian">
+            <img src="./images/i7.png" alt="" />
+            <form action="" method="POST">
+                <label class="phone ">
+                    <div class="box">
+                        <input type="text" name="phone" id=""  placeholder="手机号码"/>
+                        <button>发送验证码</button>
+                    </div>
+                    <span>手机号码格式不正确</span>
+                </label>
+                <label class="code">
+                    <input type="text" name="code" id=""  placeholder="动态码"/>
+                    <span>请填写6位手机动态码</span>
+                </label>
+                <label class="username">
+                    <input type="text" name="username" id="" placeholder="账户名"/>
+                    <span>用户名长度3-20位</span>
+                </label>
+                <label class="password">
+                    <input type="text" name="password" id="" placeholder="设置密码" />
+                    <span>密码长度6-20位</span>
+                </label>
+                <label class="repassword">
+                    <input type="text" name="repassword" id="" placeholder="确认密码"/>
+                    <span>密码长度6-20位</span>
+                </label>
+                <span class="agree">注册即同意<a href="">《用户使用协议》</a>&<a href="">《隐私权条款》</a></span>
+                <button class="btn">注册</button>
+            </form>
+        </div>
+        <footer>
+            <a href="">@17.com</a>
+            <a href="">联系客服</a>
+            <a href="">帮助中心</a>
+        </footer>
+    </section>
+
+
+
+    <script src="./js/i7biao.js"></script>
+</body>
+
+</html>

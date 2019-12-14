@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./box.css" />
+	</head>
+	<body>
+		<div class="bigbox">
+			<div
+				class="noall"
+				style="transform: rotateY(-45deg) rotateX(-20deg)"
+			>
+				<div class="noll noll-top"></div>
+				<div class="noll noll-bottom"></div>
+				<div class="noll noll-left"></div>
+				<div class="noll noll-right"></div>
+				<div class="noll noll-front"></div>
+				<div class="noll noll-back"></div>
+			</div>
+			<div
+				class="cube"
+				style="transform: rotateY(-45deg) rotateX(-20deg)"
+			>
+				<div class="side side-top"></div>
+				<div class="side side-bottom"></div>
+				<div class="side side-left"></div>
+				<div class="side side-right"></div>
+				<div class="side side-front"></div>
+				<div class="side side-back"></div>
+			</div>
+		</div>
+		<!-- <script>
+			var noall = document.querySelector(".noall");
+			var nolls = document.querySelectorAll(".noall .noll");
+			function mylo() {
+				nolls.forEach(function(e) {
+					e.style.translateZ = 250 + "px";
+				});
+			}
+
+			noall.onmousemove = function() {
+				// console.log("ddd");
+				mylo();
+			};
+		</script> -->
+	</body>
+</html>

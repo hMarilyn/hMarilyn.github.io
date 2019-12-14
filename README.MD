@@ -1,10 +1,12 @@
 ## 项目展示
----
-#### html+css+js排版
-- 花果茶
-  [花果茶](https://hMarilyn.github.io/tea/index.html)
-- 外国农业
-  [外国农业](https://hMarilyn.github.io/framing/index.html)
+>---
+>#### html+css+js排版
+>- 花果茶
+>   + [花果茶](https://hMarilyn.github.io/all/tea/index.html)
+>- 外国农业
+>   + [外国农业](https://hMarilyn.github.io/all/framing/index.html)
+>- 名创
+>   + [名创优品](https://hMarilyn.github.io/all/mingc/index.html)
 ---
 #### jQuery
 - 选项卡

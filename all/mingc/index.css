@@ -1,0 +1,483 @@
+body {
+  background: #f4f4f4;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  background: black;
+  color: #ccc;
+  font-size: 12px;
+}
+header a {
+  color: #ccc;
+}
+header p {
+  line-height: 30px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+header span {
+  line-height: 30px;
+  margin-right: 20px;
+}
+header span:nth-child(1) {
+  margin-left: 200px;
+}
+header ul.title_nav {
+  display: inline-block;
+}
+header ul.title_nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+header ul.title_nav li::before {
+  content: "|";
+  color: #5c5c5c;
+  margin-right: 10px;
+}
+section.nav {
+  background: white;
+  margin-top: 20px;
+}
+section.nav .logo {
+  font-size: 12px;
+  position: relative;
+}
+section.nav .logo img {
+  margin-left: 530px;
+}
+section.nav .logo .form-inline {
+  display: inline-block;
+  margin-left: 150px;
+}
+section.nav .logo .form-inline .form-group {
+  position: relative;
+}
+section.nav .logo .form-inline .form-group .default {
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  border: none;
+  color: #ccc;
+  font-size: 18px;
+  background: none;
+  outline: none;
+}
+section.nav .logo .form-inline .form-group .default:hover {
+  background: none;
+}
+section.nav .logo .form-inline .form-group .form-control {
+  width: 315px;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 60px;
+}
+section.nav .logo .shopcar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(image/cart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+section.nav ul.subnav {
+  padding: 30px 0;
+  width: 900px;
+  margin: 0 auto;
+}
+section.nav ul.subnav a {
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 9px;
+  line-height: 20px;
+  border-bottom: 3px solid white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+section.nav ul.subnav a:hover {
+  border-bottom: 3px solid red;
+  color: red;
+}
+section.nav ul.subnav li {
+  display: inline-block;
+  padding: 0 28px;
+}
+section.nav ul.subnav li:nth-child(11) {
+  padding: 0 15px;
+}
+section.nav ul.subnav li:nth-child(11)::before {
+  content: "|";
+  display: inline-block;
+  color: #ccc;
+  padding-right: 40px;
+}
+section.food .center {
+  height: 420px;
+  width: 1349px;
+  margin: 0 auto;
+  background-image: url(image/s1.jpg);
+  background-position: center;
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+}
+section.food .center a img {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+section.new {
+  padding: 60px 0;
+  background: white;
+}
+section.new .center {
+  width: 1090px;
+  margin: 0 auto;
+}
+section.new .center .title {
+  width: 100%;
+  line-height: 50px;
+}
+section.new .center .title h1 {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 18px 0 50px;
+}
+section.new .center .title span {
+  font-size: 14px;
+}
+section.new .center .title .aa {
+  float: right;
+}
+section.new .center .title .aa a {
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+section.new .center .title .aa a:hover {
+  color: red;
+}
+section.new .center ul.comb {
+  float: left;
+  width: 1010px;
+}
+section.new .center ul.comb li {
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+section.new .center ul.comb li:last-child {
+  content: "";
+  display: block;
+  margin-right: 0px;
+}
+section.new .center ul.comb li img {
+  width: 245px;
+  height: 245px;
+  background: #f4f4f4;
+  transition: all 1.3s;
+}
+section.new .center ul.comb li img:hover {
+  transform: scale(1.1);
+}
+section.new .center ul.comb li .litle {
+  font-size: 14px;
+}
+section.new .center ul.comb li .litle a {
+  display: block;
+  color: #333;
+  margin: 40px 0 10px 0;
+  transition: all 0.5s;
+}
+section.new .center ul.comb li .litle a:hover {
+  color: red;
+}
+section.new .center ul.comb li .litle span {
+  color: red;
+}
+section.new .center ul.comb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.new .center .prevbtn {
+  width: 40px;
+  height: 353px;
+  background-image: url(image/prev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  cursor: pointer;
+}
+section.new .center .nextbtn {
+  width: 40px;
+  height: 353px;
+  background-image: url(image/next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  cursor: pointer;
+}
+section.new .center::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.recommend {
+  padding: 60px 0;
+  overflow: hidden;
+}
+section.recommend .title {
+  width: 100%;
+  line-height: 50px;
+}
+section.recommend .title h1 {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 18px 0 35px;
+}
+section.recommend .title a {
+  position: relative;
+  left: 870px;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 2px;
+}
+section.recommend .title a:hover {
+  color: red;
+}
+section.recommend .left {
+  float: left;
+  width: 380px;
+  text-align: center;
+  background: white;
+  font-size: 14px;
+  margin: 0 10px 10px 30px;
+}
+section.recommend .left img {
+  height: 400px;
+  width: 400px;
+  border-bottom: 1px solid #f4f4f4;
+  transition: all 1.5s;
+}
+section.recommend .left img:hover {
+  transform: scale(1.05);
+}
+section.recommend .left a {
+  display: inline-block;
+  color: #333;
+  transition: all 0.3s;
+  margin: 40px 0 5px 0;
+}
+section.recommend .left a:hover {
+  color: red;
+}
+section.recommend .left span {
+  color: red;
+  display: block;
+  font-size: 18px;
+  padding-bottom: 60px;
+}
+section.recommend ul.right {
+  float: right;
+  width: 750px;
+  text-align: center;
+}
+section.recommend ul.right li {
+  float: left;
+  width: 225px;
+  height: 290px;
+  background: white;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+section.recommend ul.right li img {
+  width: 180px;
+  height: 180px;
+  border-bottom: 1px solid #f4f4f4;
+  transition: all 1.5s;
+}
+section.recommend ul.right li img:hover {
+  transform: scale(1.1);
+}
+section.recommend ul.right li .litle {
+  font-size: 14px;
+}
+section.recommend ul.right li .litle a {
+  display: block;
+  color: #333;
+  margin: 40px 0 10px 0;
+  transition: all 0.5s;
+}
+section.recommend ul.right li .litle a:hover {
+  color: red;
+}
+section.recommend ul.right li .litle span {
+  color: red;
+}
+section.home {
+  padding-top: 60px;
+  background: white;
+  border-bottom: 1px solid #cccccc;
+}
+section.home .center {
+  padding-bottom: 60px;
+  width: 1090px;
+  margin: 0 auto;
+}
+section.home .center .title {
+  overflow: hidden;
+  line-height: 40px;
+}
+section.home .center .title h1 {
+  font-size: 30px;
+  float: left;
+  margin-right: 10px;
+}
+section.home .center .title ul.home_title li {
+  float: left;
+  padding: 0 10px;
+}
+section.home .center .title ul.home_title li::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 10px;
+  color: #ccc;
+}
+section.home .center .title ul.home_title li:last-child::after {
+  content: "";
+  display: inline-block;
+}
+section.home .center .title ul.home_title li a {
+  color: #333;
+  transition: all 0.3s;
+}
+section.home .center .title ul.home_title li a:hover {
+  color: red;
+}
+section.home .center .title > a {
+  margin-right: 10px;
+  float: right;
+  display: block;
+  color: #333;
+  transition: all 0.3s;
+}
+section.home .center .title > a:hover {
+  color: red;
+}
+section.home .center ul.shou {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 10px;
+}
+section.home .center ul.shou li {
+  width: 265px;
+  float: left;
+  margin-right: 10px;
+}
+section.home .center ul.shou li:last-child {
+  margin-right: 0px;
+}
+section.home .center ul.shou li img {
+  width: 265px;
+  height: 265px;
+  transition: all 1.3s;
+}
+section.home .center ul.shou li img:hover {
+  transform: scale(1.1);
+}
+section.home .center ul.shou li .litle {
+  font-size: 14px;
+}
+section.home .center ul.shou li .litle a {
+  display: block;
+  color: #333;
+  margin: 40px 0 10px 0;
+  transition: all 0.5s;
+}
+section.home .center ul.shou li .litle a:hover {
+  color: red;
+}
+section.home .center ul.shou li .litle span {
+  color: red;
+}
+section.serve {
+  padding: 40px 0;
+  text-align: center;
+}
+section.serve ul.center {
+  width: 1090px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section.serve ul.center li {
+  float: left;
+  width: 33%;
+}
+section.serve ul.center li:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 75px;
+}
+section.serve ul.center li h1 {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+section.serve ul.center li h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+section.serve ul.center li p {
+  letter-spacing: 0.5px;
+}
+footer {
+  background: #414141;
+  color: white;
+  text-align: center;
+}
+footer ul.top {
+  width: 1090px;
+  padding-top: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.534);
+}
+footer ul.top li {
+  width: 33%;
+  float: left;
+  line-height: 100px;
+}
+footer ul.top li img {
+  margin-right: 25px;
+}
+footer ul.top li span {
+  font-size: 18px;
+}
+footer ul.problem {
+  width: 390px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+footer ul.problem li {
+  float: left;
+  margin-right: 15px;
+}
+footer ul.problem li a {
+  color: #ccc;
+  font-size: 12px;
+}
+footer ul.problem li a:hover {
+  color: #e9e9e9;
+}
+footer p {
+  color: #ccc;
+  font-size: 12px;
+  margin: 5px 0;
+}
+/*# sourceMappingURL=./mc.css.map */
